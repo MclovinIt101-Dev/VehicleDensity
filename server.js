@@ -2,6 +2,10 @@ let activePlayers = 0;
 
 Citizen.CreateThread(async () => {
   while (true) {
+    /**
+     * Represents the active players in the game.
+     * @type {Array}
+     */
     const players = GetActivePlayers();
     activePlayers = players.length;
 
